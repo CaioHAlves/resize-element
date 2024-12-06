@@ -1,0 +1,25 @@
+h1 {
+  text-decoration: underline;
+}
+.resizable {
+  width: 200px;
+  height: 150px;
+  background-color: #ddd;
+  border: 2px solid #aaa;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.resizable::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -5px;
+  bottom: -5px;
+  background-color: #aaa;
+  cursor: se-resize;
+}
